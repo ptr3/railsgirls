@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Railsgirls</title>
+    <title>SelfAwareness</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
@@ -20,10 +20,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">The Idea App</a>
+          <a class="navbar-brand" href="/">Self Awareness and You</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            <li><a href="/ideas">idea</a></li>
+            <li ><%= link_to 'New Idea', new_idea_path %></li>
             <li><a href="/pages/info">info</a></li>
           </ul>
         </div>
